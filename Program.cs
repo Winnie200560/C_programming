@@ -4,51 +4,46 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        // ввод первой точки
-        Console.Write("Введите x первой точки: ");
-        double x1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Введите данные студента");
 
-        Console.Write("Введите y первой точки: ");
-        double y1 = double.Parse(Console.ReadLine());
+        string name;
+        string surname;
 
-        Point p1 = new Point(x1, y1);
+        Console.Write("Имя: ");
+        name = Console.ReadLine();
 
-        // ввод второй точки
-        Console.Write("Введите x второй точки: ");
-        double x2 = double.Parse(Console.ReadLine());
+        Console.Write("Фамилия: ");
+        surname = Console.ReadLine();
 
-        Console.Write("Введите y второй точки: ");
-        double y2 = double.Parse(Console.ReadLine());
+        int s1, s2, s3;
+        Console.Write("Оценка 1: ");
+        while (!int.TryParse(Console.ReadLine(), out s1))
+        {
+            Console.Write("Ошибка! Введите число в диапазоне от 1 д о 5: ");
+        }
+        
+        Console.Write("Оценка 2: ");
+        while (!int.TryParse(Console.ReadLine(), out s2))
+        {
+            Console.Write("Ошибка! Введите число в диапазоне от 1 д о 5: ");
+        }
 
-        Point p2 = new Point(x2, y2);
+        Console.Write("Оценка 3: ");
+        while (!int.TryParse(Console.ReadLine(), out s3))
+        {
+            Console.Write("Ошибка! Введите число в диапазоне от 1 д о 5: ");
+        }
+        //Console.Write("Оценка 3: ");
+        //s3 = int.Parse(Console.ReadLine());
 
-        // вычисление расстояния
-        double distance = p1.DistanceTo(p2);
+        Student student = new Student(name, surname, s1, s2, s3);
 
-        Console.WriteLine("Расстояние между точками: " + distance);
+        Console.WriteLine();
+        Console.WriteLine(student.ToString());
 
-        // Унарные операции
-        p1++;
-        Console.WriteLine("p1.x + 1  = " + p1);
-
-        p2--;
-        Console.WriteLine("p2.x - 1 = " + p2);
-
-        // приведение типов
-        int x = (int)p1;
-        double y = p1;
-
-        Console.WriteLine("int(x) = " + x);
-        Console.WriteLine("double(y) = " + y);
-
-        // бинарные операции
-        double dist = p1 + p2;
-        Console.WriteLine("Distance: " + dist);
-
-        Point p3 = p1 + 5;
-        Console.WriteLine("p1.x + 5 = " + p3);
-
-        Point p4 = 10 + p1;
-        Console.WriteLine("10 + p1.x = " + p4);
+        Console.WriteLine("Средний балл: " + student.Average());
+        Console.WriteLine("Максимальная оценка: " + student.Max());
+        Console.WriteLine("Стипендия: " + student.HasScholarship());
+        Console.WriteLine();
     }
 }
