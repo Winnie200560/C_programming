@@ -16,9 +16,8 @@
 5. После создания объекта вызываются методы (вывод информации о студенте, вычисление максимальной оценки, вычисление среднего балла, проверка наличия стипендии).
 6. Результаты выводятся на экран.
 ### Тестирование
-<img width="837" height="348" alt="image" src="https://github.com/user-attachments/assets/87b4241a-1986-44c6-baa1-cba151fe9f6f" />
-<img width="655" height="327" alt="image" src="https://github.com/user-attachments/assets/b98fcf01-81ce-4692-8bbe-c20937df68b1" />
-
+<img width="1093" height="358" alt="image" src="https://github.com/user-attachments/assets/6af29717-e507-49a3-860c-2c974e52a190" />
+<img width="856" height="356" alt="image" src="https://github.com/user-attachments/assets/02498377-836c-4408-8db2-6c1d65b2d9a3" />
 
 ## Задание 2.
 ### Текст задачи
