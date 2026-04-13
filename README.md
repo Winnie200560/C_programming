@@ -12,6 +12,7 @@
 
 ### Тестирование
 <img width="837" height="348" alt="image" src="https://github.com/user-attachments/assets/87b4241a-1986-44c6-baa1-cba151fe9f6f" />
+<img width="655" height="327" alt="image" src="https://github.com/user-attachments/assets/b98fcf01-81ce-4692-8bbe-c20937df68b1" />
 
 
 ## Задание 2.
